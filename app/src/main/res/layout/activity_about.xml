@@ -6,4 +6,41 @@
     android:layout_height="match_parent"
     tools:context=".AboutActivity">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:background="@color/colorGray3"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <TextView
+        android:id="@+id/tv_tutorial"
+        android:layout_width="377dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:text="This tutorial teach you how to use the SSS Village QR Scanner mobile application"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_about" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="264dp"
+        android:layout_height="246dp"
+        app:srcCompat="@mipmap/1"
+        tools:layout_editor_absoluteX="63dp"
+        tools:layout_editor_absoluteY="162dp" />
+
+
 </android.support.constraint.ConstraintLayout>
