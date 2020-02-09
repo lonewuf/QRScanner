@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutActivity">
+    tools:context=".TutorialThree">
 
     <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar_about"
+        android:id="@+id/toolbar_tutorial_three"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fitsSystemWindows="true"
@@ -22,38 +22,37 @@
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-
-    <TextView
-        android:id="@+id/tv_tutorial"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="This tutorial teach you how to use the SSS Village QR Scanner mobile application"
-        android:textAlignment="center"
-        android:textSize="20dp"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_about"
-        tools:layout_editor_absoluteX="0dp" />
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageViewThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_tutorial"
-        app:srcCompat="@drawable/img_one" />
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_tutorial_three"
+        app:srcCompat="@drawable/img_three" />
 
     <Button
-        android:id="@+id/btn_next"
+        android:id="@+id/btn_next_three"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
-        android:text="NEXT"
+        android:layout_marginTop="76dp"
+        android:text="FINISH"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.752"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewThree" />
+
+    <Button
+        android:id="@+id/btn_back_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="BACK"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.241"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewThree" />
 
 </android.support.constraint.ConstraintLayout>
